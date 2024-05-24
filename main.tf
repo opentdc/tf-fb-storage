@@ -13,6 +13,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+
+# BEWARE: this module depends on the Firestore module to be provisioned first.
+# Therefore, insert an depends_on = [module.tf-fb-firestore] in the app module.
+
 terraform {
   required_version = "~> 1.8"
 }
