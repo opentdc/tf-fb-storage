@@ -21,5 +21,4 @@ variable "project_id" {
 variable "location" {
   description = "Hosting center to use for the Cloud Storage bucket. This must be the same as for Firestore database."
   type        = string
-  default     = "europe-west6"
 }

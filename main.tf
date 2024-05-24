@@ -37,9 +37,7 @@ resource "google_project_service" "storage" {
 resource "google_app_engine_application" "default" {
   provider    = google-beta
   project     = var.project_id
-  # See available locations: https://firebase.google.com/docs/projects/locations#default-cloud-location
-  # This will set the location for the default Storage bucket and the App Engine App.
-  location_id = var.location  # Must be in the same location as Firestore (above)
+  location_id = var.location 
 }
 
 # Make the default Storage bucket accessible for Firebase SDKs, authentication, and Firebase Security Rules.
