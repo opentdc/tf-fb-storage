@@ -60,7 +60,7 @@ resource "google_firebaserules_ruleset" "storage" {
       # Write security rules in a local file named "storage.rules".
       # Learn more: https://firebase.google.com/docs/storage/security/get-started
       name    = "storage.rules"
-      content = file("./fb-storage/storage.rules")
+      content = file("${path.module}/storage.rules")
     }
   }
 
